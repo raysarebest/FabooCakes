@@ -12,27 +12,12 @@
   <meta name="msapplication-config" content="xml/ieconfig.xml"/>
   <meta http-equiv="default-style" content="global stylesheet"/>
   <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
-  <!--The next line links to your stylesheet. Be sure to change the href to the location of your CSS file-->
   <link rel="stylesheet" href="css/style.css" type="text/css" title="global stylesheet"/>
-  <!--This links to a favicon (the little image in the address bar) of the page. Be sure to change the href the the location of your favicon on your server, or remove the line and this comment altogether-->
+  <!-- TODO: Make a favicon -->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon" sizes=""/>
-  <!--This is an example of a prefetch. These will be silently cached by the browser, in case the user visits them next. You may want to add multiple tags of this, or remove the line and this comment altogether, but don't forget to change the href to what's next (or whatever you want cached)-->
-  <link rel="prefetch" href="nextPage.html"/>
-  <!--This links to a help page for this document-->
-  <link rel="help" href="help.html"/>
-  <!--The next 5 tags are for pagination. The first link specifies the next page the user will visit, and the second tag specifies the last page they likely visited. You'll want to link to these in <a> tags later in the document. There's also links for the first and last page in the series, and also "up", which indicates something of a table of contents. Change the href in each tag, or remove one or more of them and this comment altogether-->
-  <link rel="next" href="next.html"/>
-  <link rel="prev" href="prev.html"/>
-  <link rel="first" href="first.html"/>
-  <link rel="last" href="last.html"/>
-  <link rel="up" href="contents.html"/>
-  <!--The next tag links to this page in an alternate format. This specific link is set up as a link to an Atom XML Feed, but you can change it to what you want. Be sure to change the href, or remove the line and this comment altogether-->
-  <link rel="alternate" type="application/atom+xml" href="feed.atom"/>
-  <!--The next tag links to a collection of older stuff. This is useful, for example, for a blog to link to a list of past posts. Be sure to change the href, or delete the tag and this comment altogether-->
-  <link rel="archives" href="archive.html"/>
-  <!--The following tag specifies that a link appearing later in the document is going to an external site. You can probably just delete the tag and this comment, but if you want, you can change the href and the title (if you do, you'll probably want to make more)-->
-  <link rel="external" title="example" href="example.com"/>
-  <!--This style tag corresponds with the meta name="viewport" tag near the top, but because Internet Explorer is both retarded and relatively widely used (*cries*), you need to include this in your CSS. This also includes some common CSS for prettifying navigation on webpages. You really should copy and paste this at the top of your linked CSS file, then remove the tag and this comment, but I'm including it here so I don't have to make a whole other file, and it's in here, just in case.-->
+  <!-- When other pages are made, prefetch the next likely few here, like below -->
+  <!-- <link rel="prefetch" href="nextPage.html"/> -->
+  <!-- TODO: Put the following at the top of the Sass file, when it's created -->
   <style>
     @-ms-viewport{
       width: device-width;
@@ -44,18 +29,10 @@
       display: inline;
     }
   </style>
-  <!--The following line is to include jQuery. If you're developing locally, be sure to add https: before the //-->
-  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <!--This next script links to a JavaScript template for showing local notifications on the computer that this page is open on, found in ../js/notifications.js of this project. If you don't want notifications to be shown at any point for any reason on your site, delete this comment and the following tag-->
-  <script src="../js/notifications.js"></script>
-  <!--Be sure to change the src of the next line to the location of any JavaScript you might have. If you have none, it's safe to remove the next line, and jQuery above this one-->
-  <script src="js/script.js"></script>
 </head>
 <body>
   <header>
-    <!--Personally, I usually include my navigation in the header of the page, but you can move it wherever you want, but it should keep this structure-->
     <nav>
-      <!--I id'd this navigation, just to be clear, but you can change that to whatever you want, or remove it entirely, though that is not recommended, for CSS purposes-->
       <ul id="navigation">
         <li></li>
         <li></li>
@@ -63,7 +40,6 @@
       </ul>
     </nav>
   </header>
-  <!--I id'd this content to make it clear that it's supposed to be the general wrapper that includes everything that's not in the header or the footer (the content of the page), but you can change it to whatever you want, or remove it entirely-->
   <section id="content">
     <div id="wrapper">
     </div>
