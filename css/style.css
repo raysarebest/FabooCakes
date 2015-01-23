@@ -1,0 +1,10 @@
+@-ms-viewport {
+  width: device-width;
+}
+#navigation {
+  list-style: none;
+}
+
+#navigation li {
+  display: inline;
+}
